@@ -1,0 +1,195 @@
+@font-face {
+    font-family: MuseoSans-900;
+    src: url("/fonts/MuseoSans-900.woff");
+
+}
+@font-face {
+    font-family: MuseoSans-700;
+    src: url("/fonts/MuseoSans-700.woff");
+
+}
+@font-face {
+    font-family: MuseoSans-500;
+    src: url("/fonts/MuseoSans-500.woff");
+
+}
+@font-face {
+    font-family: MuseoSans-300;
+    src: url("/fonts/MuseoSans-300.woff");
+
+}
+@font-face {
+    font-family: MuseoSans-100;
+    src: url("/fonts/MuseoSans-100.woff");
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+.header{
+    position: static;
+    height: 60px;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #232B38;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 60px;
+    padding: 5px;
+    position: relative;
+    font-size: 14px;
+    font-family:'MuseoSans-900' ;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+}
+.header ul li button{
+    font-family: 'MuseoSans-700';
+    color: #fff;
+    font-size: 12px;
+    padding: 8px;
+    background-color: transparent;
+    width: 90px;
+    border-radius: 18px;
+    border: none;
+    outline: 1px solid white;
+    height: 36px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header i{
+    font-size: 12px;
+    margin-left: 3px;
+}
+.header ul li a:hover{
+    background-color: #1A202A;
+}
+
+.header ul li button:hover{
+   background-color: rgba(255, 255, 255, 0.13);
+}
+a, button{
+    transition: all .25s ease 0s;
+}
+.underline{
+    display: inline-block;
+    position: relative;
+}
+.underline::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(234, 5, 5);
+  transition: all 0s ease;
+}
+.underline:hover::after{
+    transform: scaleX(1);
+
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+.headermobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 810px){
+    .header{
+        display:none;
+    }
+    .headermobile{
+        font-family: 'MuseoSans-500';
+        display: block;
+    }
+    .mobilenav{
+        display: flex;
+        height: 60px;
+        background-color: #232B38;
+        align-items: center;
+    }
+    .mobilenav .logomobile{
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+    }
+    .mobilenav .icon{
+        color: #fff;
+        font-size: 30px;
+    }
+.menulinks{
+    display: none;
+    background-color: #232B38;
+    border-top: 2px solid red;
+    transition: all 2s;
+   
+}
+.menulinks ul li{
+  padding: 20px 40px ;
+
+}
+.menulinks ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'MuseoSans-500';
+    text-align: left;
+
+}
+
+.mobilenav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.mobilenav ul li{
+    display: flex;
+    align-items: center;
+}
+.mobilenav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+}
+.mobilenav ul li button {
+   background-color: transparent;
+   border-radius: 50%;
+   height: 35px;
+   width: 35px;
+   margin-right: 10px;
+
+}
+.mobilenav ul li button i{
+    color: white;
+    
+}
+}
